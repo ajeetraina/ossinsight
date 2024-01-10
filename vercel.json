@@ -1,0 +1,22 @@
+
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "packages/api-server",
+      "use": "@vercel/node"
+    },
+    // ... other builds ...
+    {
+      "src": "docs/api",
+      "use": ["@docusaurus/vercel", "./setup.sh"]
+    },
+    {
+      "src": "web",
+      "use": ["@vercel/node", "patch-package"],
+      "config": {
+        "patch-package": "./node_modules/.bin/patch-package"
+      }
+    }
+  ]
+}
