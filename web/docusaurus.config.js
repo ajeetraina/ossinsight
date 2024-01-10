@@ -30,7 +30,7 @@ const config = {
   title: 'OSS Insight',
   tagline: ' Deep Insights into Billions of GitHub events',
   url: HOST,
-  baseUrl: '/',
+  baseUrl: '/web/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon-1.png',
