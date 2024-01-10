@@ -1,4 +1,5 @@
 
+// Inside vercel.json
 {
   "version": 2,
   "builds": [
@@ -6,7 +7,6 @@
       "src": "packages/api-server",
       "use": "@vercel/node"
     },
-    // ... other builds ...
     {
       "src": "docs/api",
       "use": ["@docusaurus/vercel", "./setup.sh"]
